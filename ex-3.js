@@ -3,4 +3,11 @@ let scores = [100, 20, 3, 1000];
 let minScore;
 // Start coding here
 
+minScore = scores[0];
+for (let item of scores) {
+  if (item < minScore) {
+    minScore = item;
+  }
+}
+
 console.log(minScore);
